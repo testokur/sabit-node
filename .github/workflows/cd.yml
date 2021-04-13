@@ -1,0 +1,26 @@
+name: CD
+on:
+  push:
+    tags:
+      - 'v*'
+jobs:
+  deploy:
+    name: Deploy Docker Container
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.PROD_SERVER }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            docker pull nazmialtun/testokur-sabit:latest
+            docker stop testokur-sabit && docker rm testokur-sabit --force
+            docker run -d  \
+            --name testokur-sabit \
+            --restart=always  \
+            --network=testokur \
+            --env-file /home/env/sabit.env \
+            --network-alias=testokur-sabit \
+            nazmialtun/testokur-sabit:latest
