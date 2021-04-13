@@ -6,13 +6,13 @@
     "maxAllowedRecordCount": 250,
     "canScan": true
   },
-    {
-      "id": 2,
-      "name": "İLKOKUL-ORTAOKUL – (KURUMSAL)",
-      "maxAllowedDeviceCount": 2,
-      "maxAllowedRecordCount": 99999,
-      "canScan": true
-    },
+  {
+    "id": 2,
+    "name": "İLKOKUL-ORTAOKUL – (KURUMSAL)",
+    "maxAllowedDeviceCount": 2,
+    "maxAllowedRecordCount": 99999,
+    "canScan": true
+  },
   {
     "id": 3,
     "name": "LİSE – (BİREYSEL)",
@@ -20,13 +20,13 @@
     "maxAllowedRecordCount": 250,
     "canScan": true
   },
-    {
-      "id": 4,
-      "name": "LİSE – (KURUMSAL)",
-      "maxAllowedDeviceCount": 2,
-      "maxAllowedRecordCount": 99999,
-      "canScan": true
-    },
+  {
+    "id": 4,
+    "name": "LİSE – (KURUMSAL)",
+    "maxAllowedDeviceCount": 2,
+    "maxAllowedRecordCount": 99999,
+    "canScan": true
+  },
   {
     "id": 5,
     "name": "İLK-ORTA + LİSE",
@@ -34,11 +34,11 @@
     "maxAllowedRecordCount": 9999,
     "canScan": true
   },
-    {
-      "id": 6,
-      "name": "SMS",
-      "maxAllowedDeviceCount": 9999,
-      "maxAllowedRecordCount": 0,
-      "canScan": false
-    }
-  ]
+  {
+    "id": 6,
+    "name": "SMS",
+    "maxAllowedDeviceCount": 9999,
+    "maxAllowedRecordCount": 0,
+    "canScan": false
+  }
+]
